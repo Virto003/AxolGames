@@ -1,0 +1,68 @@
+#inicial-section {
+  img {
+    display: block;
+    margin: auto;
+    width: auto;
+  }
+}
+
+.arrow-container {
+  width: 20px;
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  height: 15px;
+}
+
+.arrow-down {
+  height: 6px;
+  background: #c7fcff;
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #76f7ff99, 0px 0px 8px #93f9ff99,
+    0px 0px 15px #c7fcff99;
+}
+
+.arrow-down:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 100%;
+  border-radius: 5px;
+  background: #c7fcff;
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+  box-shadow: 0px 0px 5px rgba(118, 247, 255, 0.6), 0px 0px 8px #93f9ff,
+    0px 0px 15px #c7fcff;
+}
+
+@keyframes bounce {
+50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  #inicial-section img {
+    margin: 5em auto;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 880px) and (min-width: 600px) {
+  #inicial-section img {
+    height: 70%;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  #inicial-section img {
+    padding-top: 2.82em;
+    padding-bottom: 2.81em;
+    height: 90%;
+  }
+}

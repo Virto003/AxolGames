@@ -1,0 +1,192 @@
+.section-title {
+  font-size: 2em;
+  font-weight: 800;
+  text-shadow: 0px 0px 10px rgba(118, 247, 255, 0.6), 0px 0px 25px #93f9ff,
+    0px 0px 40px #c7fcff;
+}
+
+#about-section {
+  padding: 3.5rem;
+  padding-bottom: 2rem;
+  background: $bg-secondary;
+  border-radius: 30px;
+}
+
+#team {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: inline-flex;
+}
+
+/* Image Mask */
+.member {
+  margin: 1.5rem;
+  vertical-align: middle;
+}
+
+.member a {
+  display: block;
+}
+
+.member .box {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.member .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10em;
+  height: 10em;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 20px $bg-secondary;
+  z-index: 0;
+  transition: box-shadow 300ms;
+}
+
+.member a:hover .box::after {
+  box-shadow: inset 0 0 0 0px $bg-secondary;
+}
+
+.member .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid $bg-secondary;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.img-linkedin {
+  width: 4em !important;
+  height: 4em !important;
+  display: block;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.member:hover .box {
+  box-shadow: 0px 0px 5px rgba(118, 247, 255, 0.6), 0px 0px 20px #93f9ff,
+    0px 0px 35px #c7fcff;
+    z-index: 2;
+}
+
+.member:hover .box .img-member {
+  filter: brightness(50%);
+}
+
+.member:hover .box img {
+  border: 0;
+}
+
+.hidden-info,
+.hidden-icon {
+  display: none !important;
+}
+
+.member:hover .hidden-info,
+.member:hover .hidden-icon {
+  display: inline !important;
+  text-align: center;
+}
+
+.member a:hover .member-name {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 1.4rem;
+  margin-bottom: 0;
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+}
+
+.simg-linkedin {
+  display: none;
+  margin: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+// 5 COLUNAS - 1380+
+.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+// 5 COLUNAS - 1280+
+@media only screen and (max-width: 1280px) {
+  .grid-container {
+    grid-template-columns: 160px 160px 160px 160px 160px;
+  }
+}
+
+// 3 COLUNAS - 1280/880
+@media only screen and (max-width: 1280px) and (min-width: 880px) {
+  .grid-container {
+    grid-template-columns: 160px 160px 160px;
+  }
+}
+
+// 2 COLUNAS - 880/680
+@media only screen and (max-width: 880px) and (min-width: 680px) {
+  .grid-container {
+    grid-template-columns: 160px 160px;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  #about-section {
+    padding: 8%;
+  }
+
+  #team {
+    display: grid;
+  }
+
+  .section-title {
+    text-shadow: 0px 0px 10px rgba(118, 247, 255, 0.6), 0px 0px 15px #93f9ff,
+      0px 0px 26px #c7fcff;
+  }
+
+  .member {
+    margin: 0.2rem;
+    vertical-align: middle;
+  }
+
+  .member-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .hidden-info {
+    display: inline !important;
+    text-align: center;
+  }
+
+  .simg-linkedin {
+    display: inline;
+    text-align: center;
+  }
+
+  // 1 COLUNA - 600-
+  .grid-container {
+    grid-template-columns: 160px;
+  }
+}

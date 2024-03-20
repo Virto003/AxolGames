@@ -1,0 +1,61 @@
+.lista-jogos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.jogo-todos-jogos {
+    border-radius: 10px;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 20px -6px #0000008f;
+    -moz-box-shadow: 0 5px 20px -6px #0000008f;
+    -webkit-box-shadow: 0 5px 20px -6px #0000008f;
+
+    display: flex;
+    align-items: flex-end;
+}
+.configuracoes a svg{
+    margin: 10;
+    width: 16px;
+    height: 16px;
+    transition: 0.5s;
+}
+.configuracoes a svg:hover{
+    filter: drop-shadow(0px 1px 5px #bf084b);
+}
+.configuracoes a {
+    padding: 5px;
+}
+
+.pai-jogos-todos-jogos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #bf084b7d;
+}
+
+.link-pag-jogo{
+    padding: 5px;
+}
+
+[style*="--aspect-ratio"]{
+    width: 250px;
+}
+[style*="--aspect-ratio"]::before {
+    content: "";
+    height: 0;
+    float: left;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
+
+[style*="--aspect-ratio"]::after {
+    content:
+        "";
+    display:
+        block;
+    clear:
+        both;
+}

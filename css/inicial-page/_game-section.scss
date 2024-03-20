@@ -1,0 +1,100 @@
+/*
+CARD BACKGORUND
+width - 447px - 27.938EM
+height - 449px - 28.063EM
+
+CAPA JOGO
+ML - 72px -  4.5EM
+MR - 73px - 4.563EM
+
+CARD / padding top - 29,99px - 1.874em
+NOME / height - 62px - 3.875em
+CAPA margin top / height - 41,99px - 2.624em
+CAPA / height - 177px - 11.063em / width - 302px - 18.875em
+CAPA margin bottom / height - 72px - 4.5em
+BTN JOGAR / height - 36px - 2.25em
+CARD / padding bottom - 29,99px - 1.874em
+*/
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 6.5em;
+  margin-bottom: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #bf084b47;
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #bf084bcc;
+    border-radius: 50px;
+  }
+}
+
+.scroll-item {
+  display: inline-block;
+  // height: 450px;
+  margin: 0 0.5em;
+  position: relative;
+
+}
+@font-face {
+  font-family: Upheavtt;
+  src: url('../font/upheavtt.ttf')
+}
+
+.nome-jogo {
+  font-family: "Upheavtt", sans-serif;
+  text-align: center;
+  margin: 20px 42.5px;
+  position: absolute;
+  width: 215px;
+  font-size: 2em;
+}
+
+.flipper {
+  display: inline-block;
+}
+
+.div-tela-flipper {
+  position: absolute;
+  z-index: -1;
+  margin: 91px 48px;
+  display: flex;
+  width: 202px;
+  height: 117px;
+  justify-content: center;
+  background: #000;
+}
+
+.imagem-flipper {
+  max-width: 201px;
+  max-height: 117px;
+
+}
+
+#formula {
+  width: 300px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  // .scroll-item {
+  //   height: 342px;
+  // }
+
+  /*
+  // .name-space {
+  //   margin-top: 1em;
+  // }*/
+}

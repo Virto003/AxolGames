@@ -1,0 +1,88 @@
+.div-inserir-imagens{
+    display: flex;
+    justify-content: center;
+}
+.div-inserir-imagens table{
+    background-color: #bf084b40;
+    border-radius: 5px;
+    width: 90%;
+}
+.table-capa-gif table{
+    width: 100%!important;
+}
+.div-inserir-imagens table th{
+    background-color: #bf084b42;
+    padding: 10px;
+    text-align: center;
+}
+.div-inserir-imagens table td{
+    padding: 10px;
+}
+.div-inserir-imagens table td img{
+    height: 75px;
+}
+.hidden{
+    display: none;
+}
+svg.icon-add-edit {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+label.btn-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.escolher-cor{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid;
+}
+ input[type="radio"]:checked + .escolher-cor{
+    border-color: black;
+}
+.cyan{
+    background: cyan;
+}
+.black{
+    background: black;
+}
+.magenta{
+    background: magenta;
+}
+.yellow{
+    background: yellow;
+}
+.flipper{
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.div-tela-flipper{
+    position: absolute;
+    z-index: -1;
+    margin: 91px 50px;
+    display: flex;
+    width: 205px;
+    height: 117px;
+    justify-content: center;
+    background: #000;
+}
+#imagem-flipper{
+    max-width: 201px;
+    max-height: 117px;
+    
+}
+#formula{
+    width: 300px;
+}
+.imagem-table{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    margin: 20px 0!important;
+}

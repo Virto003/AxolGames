@@ -1,0 +1,26 @@
+.axol-text {
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 0.2ch;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#register, #login {
+  background: #090f1a80;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(9, 15, 26, 0.16);
+  border-radius: 30px;
+  padding: 3em;
+  text-align: center;
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  #register, #login {
+    max-width: 35%;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}

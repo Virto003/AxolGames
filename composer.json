@@ -1,0 +1,11 @@
+{
+    "name": "axol/sitetcc",
+    "autoload": {
+        "psr-4": {
+            "App\\":"class/"
+        }
+    },
+    "require": {
+        "google/apiclient": "^2.12"
+    }
+}

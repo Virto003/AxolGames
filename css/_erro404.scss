@@ -1,0 +1,20 @@
+// ss - small screen
+// ls - large screen
+#img-erro {
+  width: 26rem;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  #img-erro {
+    width: 20rem;
+  }
+
+  #img-erro-ss {
+    display: block !important;
+  }
+
+  #img-erro-ls {
+    display: none !important;
+  }
+}
