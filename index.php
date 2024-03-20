@@ -32,7 +32,6 @@ $row = $result->fetch_array();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="axolgames, games, axol etec, etec games, axolote games, axol" />
     <meta property="og:title" content="Axol Games" />
-    <meta property="og:image" content="http://axolgames.fun/img/axol_logo-icon.png" />
     <meta property="og:description" content="Vem jogar com a gente!" />
     <meta property="og:type" content="game"/>
     <script src="https://kit.fontawesome.com/fffd2b7e52.js" crossorigin="anonymous"></script>
